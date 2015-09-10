@@ -84,16 +84,16 @@ hr{
   float:left;
   width:50%;
 }
-.first-name{ font-size:34px; }
+.first-name{ font-size:32px; }
 .last-name{
-  font-size:23px;
+  font-size:22px;
+  margin-top:4px;
   margin-right:5px;
 }
-.pagelinks{
-  display: inline-block;
+.pagelinks, .biolinks{
+  display: block;
   text-align: left;
   font-family: 'Raleway';
-  border-left: 1px solid #b2bfc1;
   width:50%;
   float:left;
 }
@@ -116,10 +116,18 @@ hr{
   color:#dde6e4;
   background-color: #4c4c4c;
 }
+.biolinks li{
+  display: inline;
+  border-left:1px solid #dde6e4;
+  padding:0 10px 0 14px;
+}
+.biolinks li:first-child{border:none;}
 
 /* CONTENT */
 .mainContent{ 
   padding:2em;
+  border-top:1px solid #f6f6f9;
+  border-bottom:1px solid #f6f6f9;
 }
 /*bg color in maincontent area */
 .mainContent, .decorative:after{
@@ -304,6 +312,7 @@ hr{
   }
   .mainContent{
     /*border-left:10px solid #f6f6f9;*/
+    border:none;
     border-left:1px solid #f6f6f9;
     border-right:1px solid #f6f6f9;
     position:relative;
@@ -322,13 +331,8 @@ hr{
   .name{
     float:none;
     width:auto;
-    padding:0 102px 0 15px; 
+    padding:0 88px 0 15px; 
   }
-  .first-name{ 
-    font-size:32px; 
-    margin-bottom:3px; 
-  }
-  .last-name{ font-size:22px; }
   .bg-dec1, .bg-dec2{
     position:fixed;
     width:300px;
@@ -347,12 +351,11 @@ hr{
     -ms-transform: scaleY(-1);
     transform: scaleY(-1);
   }
-  .pagelinks{ 
+  .pagelinks, .biolinks{ 
     float:none;
     width:auto;
     text-align: left;
     margin-top:25px;
-    font-size:1.08em;
   }
   .pagelinks li{
     width: 100%;
