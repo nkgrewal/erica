@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600,800,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+@import 'desktop.css';
 
 /*body{ background-color: #dde6e4; }*/
 
@@ -50,12 +51,12 @@ a, a:hover{
   transition: all linear .15s;
 }
 a:hover{ 
-  border-bottom:1px solid #e56442;
+  border-bottom:1px solid #b2bfc1;
   text-decoration: none;
 }
 hr{
   border-top:1px solid #b2bfc1;
-  margin:15px 0 30px 0;
+  margin:50px 0;
 }
 .decorative:after{
   display: table;
@@ -79,10 +80,9 @@ hr{
   white-space: nowrap;
 }
 .name{ 
-  padding:15px 8px;
-  display: inline-block;
-  float:left;
-  width:50%;
+  padding:20px 8px;
+  text-align: center;
+  margin:0 auto;
 }
 .first-name{ font-size:32px; }
 .last-name{
@@ -91,11 +91,12 @@ hr{
   margin-right:5px;
 }
 .pagelinks, .biolinks{
-  display: block;
-  text-align: left;
+  text-align: center;
   font-family: 'Raleway';
-  width:50%;
-  float:left;
+}
+.pagelinks{
+  font-size:1.2em;
+  margin-top:10px;
 }
 .pagelinks li{
   width: 100%;
@@ -107,21 +108,28 @@ hr{
   display: block;
 }
 .pagelinks a:hover{
-  text-decoration: none;
   border:none;
   color:#dde6e4;
   background-color: #6e706f;
 }
 .pagelinks .active{
-  color:#dde6e4;
-  background-color: #4c4c4c;
+  color:#fff;
+  background-color: #B4B2AF;
+}
+.biolinks{ 
+  margin:-10px auto 15px auto; 
 }
 .biolinks li{
   display: inline;
   border-left:1px solid #dde6e4;
-  padding:0 10px 0 14px;
+  font-size:0.9em;
 }
 .biolinks li:first-child{border:none;}
+.biolinks a{ padding:15px;}
+.biolinks a:hover {
+  border:none;
+  background-color: #E0E0DE;
+}
 
 /* CONTENT */
 .mainContent{ 
@@ -166,13 +174,18 @@ hr{
   -moz-border-radius: 50%;
   border-radius: 50%;
   display: block;
-  margin: 30px auto 0 auto;
+  margin: 10px auto;
   border:2px solid #666;
 }
 
 /* PIECE */
 .piece{
   margin-bottom:5em;
+}
+
+.section-info p, .piece p{
+  margin:1.2em auto;
+  max-width:88%;
 }
 
 /* CAROUSEL */
@@ -289,19 +302,6 @@ hr{
     padding-left:110px;
     padding-right:110px;
   }
-  .name{
-    width:27%;
-    display: inline-block;
-  }
-  .pagelinks{ 
-    width:73%;
-    text-align: right;
-    border:none;
-    display: inline-block;
-  }
-  .pagelinks a{
-    display: inline-block;
-  }
 }
 
 @media (min-width: 992px) {
@@ -321,7 +321,6 @@ hr{
   }
   .mainNav{
     text-align: right;
-    padding-left:15px;
     position:fixed;
   }
   .mainNav, .mainContent{
@@ -331,8 +330,11 @@ hr{
   .name{
     float:none;
     width:auto;
-    padding:0 88px 0 15px; 
+    display:block;
+    text-align:right;
+    margin-right:25px;
   }
+
   .bg-dec1, .bg-dec2{
     position:fixed;
     width:300px;
@@ -352,17 +354,21 @@ hr{
     transform: scaleY(-1);
   }
   .pagelinks, .biolinks{ 
-    float:none;
     width:auto;
-    text-align: left;
+    display:block;
+    text-align: right;
     margin-top:25px;
+  }
+  .pagelinks{
+    font-size:1em;
   }
   .pagelinks li{
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom:0;
+    display: block;
   }
   .pagelinks a{
-    padding:15px 58px 15px 15px;
+    padding:15px 43px 15px 15px;
     display: block;
   }
   .pagelinks .active{
@@ -372,6 +378,11 @@ hr{
   .pagelinks a:hover{
     color:#dde6e4;
     background-color: #6e706f;
+  }
+  .biolinks{
+    display:block;
+    margin-right:25px;
+    margin-top:30px;
   }
   .decorative:after{
     left:40%;
@@ -384,6 +395,10 @@ hr{
     z-index:100;
   }
 
+/*intro*/
+.erica-pic{
+  margin:0 0 30px 0;
+}
   /*.carousel{
     width:94%;
     margin-left:6%;

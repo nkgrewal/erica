@@ -1,0 +1,209 @@
+
+@media (min-width: 600px) {
+  body, input, button{
+    font-size:16px;
+  }
+  h1{ font-size:36px; }
+  h2{ font-size:30px; }
+  h3{ font-size:24px; }
+  h4{ font-size:18px; }
+  h5{ font-size:16px; }
+  h6{ font-size:14px; }
+  .mainContent{
+    padding-left:110px;
+    padding-right:110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .allcontent{
+    position:relative;
+    overflow: hidden;
+    z-index:0;
+  }
+  .mainContent{
+    /*border-left:10px solid #f6f6f9;*/
+    border:none;
+    border-left:1px solid #f6f6f9;
+    border-right:1px solid #f6f6f9;
+    position:relative;
+    margin-left:25%;
+    max-width:75%;
+  }
+  .mainNav{
+    text-align: right;
+    position:fixed;
+  }
+  .mainNav, .mainContent{
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+  .name{
+    float:none;
+    width:auto;
+    display:block;
+    text-align:right;
+    margin-right:25px;
+  }
+
+  .bg-dec1, .bg-dec2{
+    position:fixed;
+    width:300px;
+    height:350px;
+    background:url(../img/bg-dec.svg) no-repeat top right;
+    z-index:-10;
+  }
+  .bg-dec1{
+    bottom:-160px;
+    left:13%;
+  }
+  .bg-dec2{
+    top:-160px;
+    left:78%;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+  .pagelinks, .biolinks{ 
+    width:auto;
+    display:block;
+    text-align: right;
+    margin-top:25px;
+  }
+  .pagelinks{
+    font-size:1em;
+  }
+  .pagelinks li{
+    width: 100%;
+    margin-bottom:0;
+    display: block;
+  }
+  .pagelinks a{
+    padding:15px 43px 15px 15px;
+    display: block;
+  }
+  .pagelinks .active{
+    color:#fff;
+    background-color: #B4B2AF;
+  }
+  .pagelinks a:hover{
+    color:#dde6e4;
+    background-color: #6e706f;
+  }
+  .biolinks{
+    display:block;
+    margin-right:25px;
+    margin-top:30px;
+  }
+  .mobile {display:none;}
+  .decorative:after{
+    left:40%;
+    top:-20px;
+    width:90px;
+    height:30px;
+    background-position: 13px 0px;
+  }
+  .footer{
+    z-index:100;
+  }
+
+/*intro*/
+.erica-pic{
+  margin:0 0 30px 0;
+}
+  /*.carousel{
+    width:94%;
+    margin-left:6%;
+    margin-top:-10px;
+  }
+  .carousel .inner{
+    -webkit-transition: all linear 1s;
+      -moz-transition: all linear 1s;
+      -o-transition: all linear 1s;
+      transition: all linear 1s;
+  }
+  .carousel .item{
+    padding:.7em;
+    text-align:center;
+    max-width:93%;
+  }
+  .carousel img{
+    width:auto;
+    margin:0 auto;
+    max-width:100%;
+    height:auto;
+    max-height: 850px;
+    -webkit-box-shadow:  0 1px .7em rgba(0, 0, 0, 0.45);
+    -moz-box-shadow:  0 1px .7em rgba(0, 0, 0, 0.45);
+    box-shadow:  0 1px .7em rgba(0, 0, 0, 0.45);
+  }
+  .carousel-control {
+    position: absolute;
+    top:70px;
+    width: 40px;
+    height: 40px;
+    font-size: 52px;
+    font-weight: 100;
+    line-height: 29px;
+    color: #fcfcfa;
+    text-align: center;
+    background: #6e6963;
+    border:1px solid #a09a91;
+    text-shadow:none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1-0);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+  }
+  .carousel-control{
+    -webkit-transition: all linear .25s;
+      -moz-transition: all linear .25s;
+      -o-transition: all linear .25s;
+      transition: all linear .25s;
+  }
+  .carousel-control:hover{
+    border:1px solid #a09a91;
+    background-color: #43403c;
+
+  }
+  .carousel-control.left{
+    left:-25px;
+    background-image:none;
+  }
+  .carousel-control.right{
+    right:0;
+    background-image:none;
+  }
+  .carousel-indicators{
+    top:110px;
+    margin-left:0;
+    left:auto;
+    right:10px;
+    width:auto;
+    bottom:auto;
+  }
+  .carousel-indicators li{
+    border: 1px solid #a09a91;
+    background-color: #6e6963;
+    display: block;
+    width:15px;
+    height:15px;
+    margin:15px 1px;
+  }
+  .carousel-indicators .active{
+    margin:10px 1px;
+    width:15px;
+    height:15px;
+    background-color: #cac1b6;
+  }*/
+}
+
+@media (min-width: 1200px) {
+  .mainContent{
+    max-width:66%;
+  }
+}
