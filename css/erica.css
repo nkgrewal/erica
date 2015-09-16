@@ -34,7 +34,6 @@ h6{ font-size:12px; }
 ul{
   list-style-type: none;
   margin:0;
-  padding:0;
   line-height: 1.8em;
 }
 p{
@@ -56,7 +55,8 @@ a:hover{
 }
 hr{
   border-top:1px solid #b2bfc1;
-  margin:50px 0;
+  margin:50px auto;
+  max-width:88%;
 }
 .decorative:after{
   display: table;
@@ -93,6 +93,7 @@ hr{
 .pagelinks, .biolinks{
   text-align: center;
   font-family: 'Raleway';
+  padding:0;
 }
 .pagelinks{
   font-size:1.2em;
@@ -299,8 +300,8 @@ hr{
   h5{ font-size:16px; }
   h6{ font-size:14px; }
   .mainContent{
-    padding-left:110px;
-    padding-right:110px;
+    padding-left:80px;
+    padding-right:80px;
   }
 }
 
@@ -333,6 +334,7 @@ hr{
     display:block;
     text-align:right;
     margin-right:25px;
+    padding-bottom:10px;
   }
 
   .bg-dec1, .bg-dec2{
@@ -357,10 +359,10 @@ hr{
     width:auto;
     display:block;
     text-align: right;
-    margin-top:25px;
   }
   .pagelinks{
     font-size:1em;
+    margin-top:25px;
   }
   .pagelinks li{
     width: 100%;
@@ -381,8 +383,14 @@ hr{
   }
   .biolinks{
     display:block;
-    margin-right:25px;
-    margin-top:30px;
+    margin-right:34px;
+    margin-top:0;
+  }
+  .biolinks a{
+    padding-left:10px;
+  }
+  .biolinks a:first-child{
+    padding-right:5px;
   }
   .decorative:after{
     left:40%;
