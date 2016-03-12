@@ -1,9 +1,7 @@
 @import 'bootstrap.min.css';
-@import 'bootstrap-touch-carousel';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600,800,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
-@import 'desktop.css';
 
 /*body{ background-color: #dde6e4; }*/
 
@@ -113,10 +111,6 @@ hr{
   color:#dde6e4;
   background-color: #6e706f;
 }
-.pagelinks .active{
-  color:#fff;
-  background-color: #B4B2AF;
-}
 .biolinks{ 
   margin:-10px auto 15px auto; 
 }
@@ -130,6 +124,10 @@ hr{
 .biolinks a:hover {
   border:none;
   background-color: #E0E0DE;
+}
+.mainNav a.active{
+  color:#fff;
+  background-color: #B4B2AF;
 }
 
 /* CONTENT */
@@ -275,6 +273,24 @@ hr{
   background-color: #968c87;
 }
 
+/* RESUME */
+.resume > div{
+  padding:2em 0;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+.resume h4{
+  margin-bottom:5px;
+}
+.resume .blurb{
+  padding:1em 1em 0 1em;
+  border: 1px solid #f3f3f6;
+  background-color:#fff;
+  color:#222;
+}
+.resume p{
+  margin:0 auto 1.3em auto;
+}
 
 /* FOOTER */
 .footer{
@@ -287,6 +303,7 @@ hr{
   background-color:#f1f5f4;
   border-top:1px solid #ccc;
 }
+
 
 
 @media (min-width: 600px) {
@@ -319,6 +336,7 @@ hr{
     position:relative;
     margin-left:25%;
     max-width:75%;
+    min-height:600px;
   }
   .mainNav{
     text-align: right;
@@ -403,10 +421,17 @@ hr{
     z-index:100;
   }
 
-/*intro*/
-.erica-pic{
-  margin:0 0 30px 0;
-}
+  /*intro*/
+  .erica-pic{
+    margin:0 0 30px 0;
+  }
+
+  /*resume*/
+  .resume{
+    margin:0 auto;
+    max-width:88%;
+  }
+
   /*.carousel{
     width:94%;
     margin-left:6%;
