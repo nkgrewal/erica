@@ -26,6 +26,14 @@
               <li><a href="resume.html">Resume</a></li>
               <li><a href="https://www.linkedin.com/in/ejorgensen">LinkedIn</a></li>
             </ul>
+            <!-- Mobile Menu -->
+            <ul class="mobile pagelinks">
+              <li><a class="name" href="index.html">EMJ</a></li>
+              <li><a href="copywriting.html">Copywriting</a></li>
+              <li><a href="content-development.html">Content Development</a></li>
+              <li><a class="active" href="#">Content Strategy</a></li>
+            </ul>
+            <!-- Desktop Menu -->
             <ul class="pagelinks">
               <li><a href="copywriting.html">Copywriting</a></li>
               <li><a href="content-development.html">Content Development</a></li>
@@ -127,24 +135,8 @@
       <!-- endFOOTER -->
 
     </div> <!-- endCONTAINER -->
-    <script type="text/javascript" src="sources/js/jquery-1.11.1.min.js"></script> 
-    <script type="text/javascript" src="sources/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="sources/js/jquery.touchSwipe.min.js"></script>    
-    <script>
-    $(document).ready(function() {      
-       $('.carousel').carousel('pause');
-       $(".carousel-inner").swipe( {
-            //Generic swipe handler for all directions
-            swipeLeft:function(event, direction, distance, duration, fingerCount) {
-              $(this).parent().carousel('next'); 
-            },
-            swipeRight: function() {
-              $(this).parent().carousel('prev'); 
-            },
-            //Default is 75px, set to 0 for demo so any distance triggers swipe
-            threshold:0
-          });
-    });
-    </script>
+    <script src="sources/js/jquery-1.11.1.min.js"></script> <!-- JQUERY required for all scripts -->
+    <script src="sources/js/bootstrap-plus-jquery.touchSwipe.min.js"></script> <!-- required for carousel --> 
+    <script src="sources/js/erica-custom.js"></script> <!-- required for mobile menu and carousel --> 
   </body>
 </html>
