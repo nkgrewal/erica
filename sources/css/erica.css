@@ -184,9 +184,13 @@ hr{
   background-color: #fcfcfa;
 }
 .mainContent h1, .mainContent h2{
-  margin-bottom:1em;
+  margin-bottom:6px;
   color:#66929b;
   text-align: center;
+}
+.mainContent h5{
+  text-align: center;
+  margin-bottom:20px;
 }
 
 /* ERICA INTRO */
@@ -305,7 +309,7 @@ hr{
   background-image:none;
 }
 .carousel-indicators{
-  top:-30px;
+  top:-28px;
   bottom:auto;
 }
 .carousel-indicators li{
