@@ -35,8 +35,8 @@ ul{
   line-height: 1.8em;
 }
 p{
-  margin-top:1.3em;
-  line-height: 1.8em;
+  margin-top:1.5em;
+  line-height: 1.5em;
   font-family:'Open Sans';
 }
 a, a:hover{
@@ -174,7 +174,7 @@ hr{
 
 /* CONTENT */
 .mainContent{ 
-  padding:2em;
+  padding:1em 2em;
   border-top:1px solid #f6f6f9;
   border-bottom:1px solid #f6f6f9;
 }
@@ -229,7 +229,7 @@ hr{
   margin-bottom:1em;
 }
 .section-info p, .piece p{
-  margin:1.2em auto;
+  margin:1.5em auto;
   max-width:88%;
 }
 .piece p:first-child{
