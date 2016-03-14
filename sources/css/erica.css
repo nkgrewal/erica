@@ -120,9 +120,8 @@ hr{
   left:0;
   border-right:1px solid #DAD9D4;
   border-bottom:1px solid #DAD9D4;
-  background-color:rgba(180,178,175,.2);
-  color:#DAD9D4;
-  font-weight: 400;
+  background-color:#fff;
+  color:#66929b;
 }
 .pagelinks li{
   width: 100%;
@@ -225,7 +224,7 @@ hr{
 }
 
 /* PIECE */
-.piece{margin:4.5em auto 4em auto;}
+.piece{margin:4.5em auto 3.5em auto;}
 .piece:last-child{
   margin-bottom:1em;
 }
