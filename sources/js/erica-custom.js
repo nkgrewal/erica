@@ -27,7 +27,7 @@ activeLink.bind({
 
 //Locks menu to top of the screen
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 126) {
+    if ($(window).scrollTop() > 114) {
         menu.addClass('fixed');
     } else {
         menu.removeClass('fixed');
