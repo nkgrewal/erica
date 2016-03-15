@@ -27,7 +27,7 @@ activeLink.bind({
 
 //Locks menu to top of the screen
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 126) {
+    if ($(window).scrollTop() > 114) {
         menu.addClass('fixed');
     } else {
         menu.removeClass('fixed');
@@ -38,6 +38,7 @@ $(window).bind('scroll', function () {
 //CAROUSEL
 if($('.carousel').length >0 ){
 	$('.carousel').carousel('pause');
+	$('.carousel').carousel({interval: false});
 	$(".carousel-inner").swipe( {
 		//Generic swipe handler for all directions
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
