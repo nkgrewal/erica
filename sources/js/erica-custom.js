@@ -38,6 +38,7 @@ $(window).bind('scroll', function () {
 //CAROUSEL
 if($('.carousel').length >0 ){
 	$('.carousel').carousel('pause');
+	$('.carousel').carousel({interval: false});
 	$(".carousel-inner").swipe( {
 		//Generic swipe handler for all directions
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
