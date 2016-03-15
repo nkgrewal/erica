@@ -147,7 +147,6 @@ hr{
   font-size:1em;
   border-top:1px solid #f3f3f6;
   border-bottom:1px solid #f3f3f6;
-  display:none;
   position:relative;
 }
 .pagelinks li{
@@ -171,7 +170,7 @@ hr{
 
 /* MOBILE MENU */
 .mobile{ display:block; }
-.mobile .name{display:none;}
+.desktop, .mobile .name{display:none;}
 .fixed{
   position:fixed;
   top:0;
@@ -213,19 +212,26 @@ hr{
   border-bottom:1px solid #f6f6f9;
 }
 /*bg color in maincontent area */
-.mainContent, .decorative::after{
-  background-color: #fcfcfa;
+.mainContent, .decorative::after{ background-color: #fcfcfa; }
+.mainContent a:hover{ 
+  background-color: rgba(76,76,76,.15);
+  border-bottom:none;
 }
 
 /* ERICA INTRO */
 .intro{
   max-width:600px;
-  margin:0 auto;
+  margin:40px auto;
   clear:both;
 }
-.intro h1{
+.intro h1, .intro h2, .intro h3{
   text-align: center;
   color:#629ba6;
+}
+.intro .mobile a{
+  display: block;
+  text-decoration: underline;
+  margin-bottom:1em;
 }
 .intro hr{ margin:40px auto; }
 .intro p{
@@ -296,7 +302,6 @@ hr{
   padding-right:5px;
   border-bottom:1px solid rgba(76,76,76,.15);
 }
-.description ol a:hover{ background-color: rgba(76,76,76,.15);}
 
 /* CAROUSEL */
 .carousel{
@@ -477,6 +482,7 @@ hr{
 
 /* DESKTOP OR LARGE TABLET */
 @media (min-width: 992px) {
+  .desktop{display:block;}
   .allcontent{
     position:relative;
     overflow: hidden;
