@@ -259,7 +259,10 @@ hr{
   margin:6px auto 2px auto;
 }
 .mainContent > .description {color:#989693;}
-.piece{margin:5em auto 3.5em auto;}
+.piece{
+  margin:5em auto 3.5em auto;
+  overflow: hidden;
+}
 .piece:first-child{margin-top:2em;}
 .piece:last-child{ margin-bottom:2em;}
 .title,.description{
@@ -449,7 +452,6 @@ hr{
   .mainContent{
     padding-left:80px;
     padding-right:80px;
-    overflow: hidden;
   }
   .mainContent > .description{margin-top:1.3em;}
   .mainContent hr{width:90%;}
