@@ -13,11 +13,12 @@ The site has 5 pages. Only the 3 content heavy pages have Javascript interactivi
 1. Upload photos to "pieces" folder in the root.
 2. The markup has a few layers to make it work. Your best bet is to copy an existing piece and edit it or use the template below
 3. The id for the carousel sets it functionality. Set an HTML appropriate name (e.g. "starbucksGilt" or "_NAME_" below), and use that for the following:
-  * <div _id="NAME"_ class="carousel slide"> - Carousel container
-  * <li _data-target="#NAME"_ data-slide-to="1"> - Carousel indicator button
-  * <a class="carousel-control left" _href="#NAME"_ data-slide="prev"> - Carousel left button
-  * <a class="carousel-control right" _href="#NAME"_ data-slide="next"> - Carousel right button
-4. Place image links in <div class="item">
+  * div _id="NAME"_ class="carousel slide" - Carousel container
+  * li _data-target="#NAME"_ data-slide-to="1" - Carousel indicator button
+  * a class="carousel-control left" _href="#NAME"_ data-slide="prev" - Carousel left button
+  * a class="carousel-control right" _href="#NAME"_ data-slide="next" - Carousel right button
+4. Place image links in carousel items
+5. Add description below
 
 #### Piece template
           <!-- [NEW ITEM] -->
