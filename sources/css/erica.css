@@ -86,6 +86,7 @@ hr{
   margin:30px auto;
   width:100%;
 }
+.container-fluid{overflow:hidden;}
 .decorative::after{
   display: table;
   clear: both;
