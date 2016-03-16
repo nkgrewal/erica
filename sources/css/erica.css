@@ -181,7 +181,7 @@ hr{
 }
 .fixed .name{
   display: inline;
-  position:fixed;
+  position:absolute;
   left:0;
   border-right:1px solid #DAD9D4;
   border-bottom:1px solid #DAD9D4;
@@ -231,7 +231,7 @@ hr{
 .intro .mobile a{
   display: block;
   text-decoration: underline;
-  margin-bottom:1em;
+  margin:0.5em 0 0.5em 0;
 }
 .intro hr{ margin:40px auto; }
 .intro p{
@@ -255,7 +255,7 @@ hr{
   font-family: 'Open Sans';
   font-weight:300;
   text-align: left;
-  margin:6px auto 5px auto;
+  margin:6px auto 2px auto;
 }
 .mainContent > .description {color:#989693;}
 .piece{margin:5em auto 3.5em auto;}
@@ -367,13 +367,13 @@ hr{
   border:none;
 }
 .carousel-control.left{
-  left:-14px;
+  left:-10px;
   text-align: left;
   padding-left:7px;
   background-image:none;
 }
 .carousel-control.right{
-  right:-14px;
+  right:-10px;
   text-align: right;
   padding-right:7px;
   background-image:none;
