@@ -449,14 +449,12 @@ hr{
   .mainContent{
     padding-left:80px;
     padding-right:80px;
+    overflow: hidden;
   }
   .mainContent > .description{margin-top:1.3em;}
   .mainContent hr{width:90%;}
   .intro hr{width:100%;}
-  .piece{
-    margin:5.5em auto;
-    overflow: hidden;
-  }
+  .piece{margin:5.5em auto;}
   .carousel{ margin: 0 auto; }
   .description{
     padding:1.5em 2em 1em 2em;
